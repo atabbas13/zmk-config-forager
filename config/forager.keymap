@@ -85,8 +85,8 @@
         };
 
         // -- Punctuation mod-morphs (urob-style) --
-        // ,  -> shift: ;   ctrl+shift: <
-        // .  -> shift: :   ctrl+shift: >
+        // ,  -> shift: '   ctrl+shift: <
+        // .  -> shift: "   ctrl+shift: >
 
         comma_morph: comma_morph {
             compatible = "zmk,behavior-mod-morph";
@@ -98,14 +98,14 @@
         comma_inner_morph: comma_inner_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SEMICOLON>, <&kp LESS_THAN>;
+            bindings = <&kp SQT>, <&kp LESS_THAN>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
         dot_morph: dot_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&dot_inner_morph>;
+            bindings = <&kp DQT>, <&dot_inner_morph>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -289,19 +289,19 @@
         sym_layer {
             display-name = "SYM";
             bindings = <
-&kp LBRC    &kp AMPS    &kp ASTRK     &kp LPAR       &kp RBRC       &none        &none         &none        &none       &none
-&kp COLON   &kp DLLR    &kp PRCNT     &kp CARET      &kp PLUS       &none        &kp RSHFT     &kp RCTRL    &kp RALT    &kp RGUI
-&kp TILDE   &kp EXCL    &kp AT        &kp HASH       &kp PIPE       &none        &none         &none        &none       &none
-                                      &trans         &kp RPAR       &none        &none
+&kp LBRC    &kp AMPS    &kp ASTRK     &kp LPAR       &kp RBRC   &kp F1    &kp F2       &kp F3       &kp F4       &kp F5
+&kp COLON   &kp DLLR    &kp PRCNT     &kp CARET      &kp PLUS   &none     &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
+&kp TILDE   &kp EXCL    &kp AT        &kp HASH       &kp PIPE   &kp F6    &kp F7       &kp F8       &kp F9       &kp F10
+                                      &trans         &kp RPAR   &kp F11   &kp F12
             >;
         };
 
         adj_layer {
             display-name = "ADJ";
             bindings = <
-&studio_unlock &none    &none         &none          &none          &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP &kp C_PP    &none
-&kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT      &none          &out OUT_TOG &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
-&bootloader &sys_reset  &none         &none          &none          &bt BT_CLR   &none         &none        &none       &none
+&studio_unlock &kp C_BRI_DN &kp C_BRI_UP         &none          &none          &kp C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP &kp C_PP    &none
+&kp LGUI       &kp LALT     &kp LCTRL            &kp LSHFT      &none          &out OUT_TOG &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+&bootloader    &sys_reset   &none                &none          &none          &bt BT_CLR   &none         &none        &none       &none
                                       &none          &none          &none        &none
             >;
         };
