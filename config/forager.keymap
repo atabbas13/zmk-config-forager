@@ -177,16 +177,16 @@
 &kp Q        &kp W        &kp E         &kp R          &kp T          &kp Y        &kp U         &kp I            &kp O        &kp P
 &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F   &kp G          &kp H        &hmr RSHFT J  &hmr RCTRL K     &hmr RALT L  &hmr RGUI SEMI
 &kp Z        &kp X        &kp C         &kp V          &kp B          &kp N        &kp M         &kp COMMA        &kp DOT      &kp FSLH
-                                        &lt NAV SPACE  &kp MOUSE TAB       &lt SYM RET  &lt NUM BSPC
+                                        &lt NAV SPACE  &lt MOUSE TAB       &lt SYM RET  &lt NUM BSPC
             >;
         };
 
         nav_layer {
             display-name = "NAV";
             bindings = <
-&none       &none       &none         &none          &none          &none       &none       &none         &none          &none
+&none       &none       &none         &none          &none          &none         &none        &none        &none       &none
 &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT      &none          &kp LEFT      &kp DOWN     &kp UP       &kp RIGHT   &kp CAPS
-&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y)    &kp INS        &kp HOME     &kp PG_DN    &kp PG_UP   &kp END
+&kp LC(Z)   &kp LC(X)   &kp LC(C)     &kp LC(V)      &kp LC(Y)      &kp INS       &kp HOME     &kp PG_DN    &kp PG_UP   &kp END
                                       &none          &none          &trans        &kp BSPC
             >;
         };
@@ -197,7 +197,7 @@
 &kp LBKT    &kp N7      &kp N8        &kp N9         &kp RBKT       &none        &none         &none        &none       &none
 &kp MINUS   &kp N4      &kp N5        &kp N6         &kp EQUAL      &none        &kp RSHFT     &kp RCTRL    &kp RALT    &kp RGUI
 &kp GRAVE   &kp N1      &kp N2        &kp N3         &kp BSLH       &none        &none         &none        &none     &none
-                                      &kp SQT      &kp N0         &kp RET      &kp BSPC
+                                      &kp SQT        &kp N0         &kp RET      &kp BSPC
             >;
         };
 
