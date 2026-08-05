@@ -105,14 +105,14 @@
         dot_morph: dot_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&dot_inner_morph>;
+            bindings = <&kp DOT>, <&dot_inner_morph>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dot_inner_morph: dot_inner_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp GREATER_THAN>;
+            bindings = <&kp DQT>, <&kp GREATER_THAN>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
