@@ -32,7 +32,7 @@ layers:
   - .
   - /
   - {t: SPACE, h: NAV}
-  - 5 TAB
+  - {t: TAB, h: MOUSE}
   - {t: RET, h: SYM}
   - {t: BSPC, h: NUM}
   NAV:
@@ -207,7 +207,7 @@ layers:
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
